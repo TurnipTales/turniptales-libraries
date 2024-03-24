@@ -4,10 +4,14 @@ on:
   push:
     branches: [ "develop" ]
 
-jobs:
-  build:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
-    name: 🏗️ Build TurnipTales Libraries
+jobs:
+  release:
+
+    name: 🏗️ Release TurnipTales Libraries
     runs-on: ubuntu-latest
 
     steps:
