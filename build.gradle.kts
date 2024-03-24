@@ -2,7 +2,7 @@ import io.papermc.paperweight.tasks.RemapJar
 
 group = "net.turniptales"
 version = "1.0.0"
-description = "TurnipTales Libaries"
+description = "TurnipTales Libraries"
 
 java.sourceCompatibility = JavaVersion.VERSION_17
 

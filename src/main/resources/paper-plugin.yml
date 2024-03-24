@@ -1,4 +1,4 @@
-name: turniptales-libaries
+name: turniptales-libraries
 version: 1.0.0
 main: net.turniptales.libraries.TurnipTalesLibraries
 api-version: '1.20'
