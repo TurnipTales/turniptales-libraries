@@ -1,0 +1,12 @@
+name: turniptales-libaries
+version: 1.0.0
+main: net.turniptales.libraries.TurnipTalesLibraries
+api-version: '1.20'
+
+load: STARTUP
+has-open-classloader: true
+
+
+
+
+
