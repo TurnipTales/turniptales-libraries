@@ -1,14 +1,12 @@
-import io.papermc.paperweight.tasks.RemapJar
-
 group = "net.turniptales"
 version = "1.0.0"
 description = "TurnipTales Libraries"
 
-java.sourceCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_21
 
 plugins {
     id("java-library")
-    id("io.papermc.paperweight.userdev") version "1.5.11"
+    id("io.papermc.paperweight.userdev") version "1.7.1"
     id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
@@ -29,7 +27,7 @@ dependencies {
     // https://mvnrepository.com/artifact/net.dv8tion/JDA
     api("net.dv8tion", "JDA", "5.0.0-beta.20")
 
-    paperweight.paperDevBundle("1.20.4-R0.1-SNAPSHOT")
+    paperweight.paperDevBundle("1.20.6-R0.1-SNAPSHOT")
 }
 
 tasks {
@@ -41,12 +39,8 @@ tasks {
         options.encoding = "UTF-8"
     }
 
-    withType<RemapJar> {
-        outputJar.set(layout.buildDirectory.file("libs/turniptales-libraries.jar"))
-    }
-
-    assemble {
-        dependsOn(reobfJar)
+    shadowJar {
+        archiveFileName.set("turniptales-libraries.jar")
     }
 
 }
