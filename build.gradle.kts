@@ -19,13 +19,13 @@ repositories {
 }
 
 dependencies {
-    api("org.springframework", "spring-web", "6.1.2")
-    api("org.springframework", "spring-webflux", "6.1.2")
-    api("com.google.code.gson", "gson", "2.10.1")
-    api("com.google.inject", "guice", "5.1.0")
+    api("org.springframework", "spring-web", "6.1.8")
+    api("org.springframework", "spring-webflux", "6.1.8")
+    api("com.google.code.gson", "gson", "2.11.0")
+    api("com.google.inject", "guice", "7.0.0")
     api("com.jeff-media", "json-configuration-serialization", "1.1.4")
     // https://mvnrepository.com/artifact/net.dv8tion/JDA
-    api("net.dv8tion", "JDA", "5.0.0-beta.20")
+    api("net.dv8tion", "JDA", "5.0.0-beta.24")
 
     paperweight.paperDevBundle("1.20.6-R0.1-SNAPSHOT")
 }
