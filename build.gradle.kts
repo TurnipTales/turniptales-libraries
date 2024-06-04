@@ -16,6 +16,7 @@ repositories {
     maven("https://maven.citizensnpcs.co/repo")
     maven("https://jitpack.io")
     maven("https://repo.maven.apache.org/maven2/")
+    maven("https://maven.rettichlp.de/releases")
 }
 
 dependencies {
@@ -24,8 +25,7 @@ dependencies {
     api("com.google.code.gson", "gson", "2.11.0")
     api("com.google.inject", "guice", "7.0.0")
     api("com.jeff-media", "json-configuration-serialization", "1.1.4")
-    // https://mvnrepository.com/artifact/net.dv8tion/JDA
-    api("net.dv8tion", "JDA", "5.0.0-beta.24")
+    api("de.rettichlp", "dclogging", "1.1.4")
 
     paperweight.paperDevBundle("1.20.6-R0.1-SNAPSHOT")
 }
