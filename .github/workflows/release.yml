@@ -31,7 +31,7 @@ jobs:
         run: ./gradlew shadowJar --full-stacktrace
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: turniptales-libraries
           path: build/libs/turniptales-libraries.jar
