@@ -20,14 +20,13 @@ repositories {
 }
 
 dependencies {
-    api("org.springframework", "spring-web", "6.1.11")
     api("org.springframework", "spring-webflux", "6.1.11")
     api("com.google.code.gson", "gson", "2.11.0")
     api("com.google.inject", "guice", "7.0.0")
     api("com.jeff-media", "json-configuration-serialization", "1.1.4")
     api("de.rettichlp", "dclogging", "1.1.5")
 
-    paperweight.paperDevBundle("1.20.6-R0.1-SNAPSHOT")
+    paperweight.paperDevBundle("1.21-R0.1-SNAPSHOT")
 }
 
 tasks {
