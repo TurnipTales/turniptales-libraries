@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    api("org.springframework", "spring-webflux", "6.1.11")
+    api("org.springframework", "spring-webflux", "6.1.12")
     api("com.google.code.gson", "gson", "2.11.0")
     api("com.google.inject", "guice", "7.0.0")
     api("com.jeff-media", "json-configuration-serialization", "1.1.4")
