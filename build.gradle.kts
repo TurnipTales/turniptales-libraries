@@ -24,7 +24,7 @@ dependencies {
     api("com.google.code.gson", "gson", "2.11.0")
     api("com.google.inject", "guice", "7.0.0")
     api("com.jeff-media", "json-configuration-serialization", "1.1.4")
-    api("de.rettichlp", "dclogging", "1.1.5")
+    api("de.rettichlp", "dclogging", "1.1.6")
 
     paperweight.paperDevBundle("1.21-R0.1-SNAPSHOT")
 }
