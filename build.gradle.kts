@@ -25,6 +25,7 @@ dependencies {
     api("com.google.inject", "guice", "7.0.0")
     api("com.jeff-media", "json-configuration-serialization", "1.1.4")
     api("de.rettichlp", "dclogging", "1.1.6")
+    api("org.atteo.classindex", "classindex", "3.13")
 
     paperweight.paperDevBundle("1.21.1-R0.1-SNAPSHOT")
 }
@@ -40,5 +41,9 @@ tasks {
 
     shadowJar {
         archiveFileName.set("turniptales-libraries.jar")
+    }
+
+    build {
+        dependsOn(shadowJar)
     }
 }
