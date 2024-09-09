@@ -27,7 +27,7 @@ dependencies {
     api("de.rettichlp", "dclogging", "1.1.6")
     api("org.atteo.classindex", "classindex", "3.13")
 
-    paperweight.paperDevBundle("1.21-R0.1-SNAPSHOT")
+    paperweight.paperDevBundle("1.21.1-R0.1-SNAPSHOT")
 }
 
 tasks {
